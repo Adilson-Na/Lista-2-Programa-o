@@ -1,0 +1,40 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+     // Exercício 9
+        Console.WriteLine("Exercício 9");
+        Console.Write("Digite o peso: ");
+        double peso9 = double.Parse(Console.ReadLine());
+        Console.Write("Digite a altura: ");
+        double altura9 = double.Parse(Console.ReadLine());
+        Console.Write("Digite o sexo (M/F): ");
+        string sexo9 = Console.ReadLine().ToUpper();
+        double r9 = peso9 / (altura9 * altura9);
+        if (sexo9 == "F")
+        {
+            if (r9 < 19)
+                Console.WriteLine("Abaixo do peso\n");
+            else if (r9 < 24)
+                Console.WriteLine("Peso ideal\n");
+            else
+                Console.WriteLine("Acima do peso\n");
+        }
+        else if (sexo9 == "M")
+        {
+            if (r9 < 20)
+                Console.WriteLine("Abaixo do peso\n");
+            else if (r9 < 25)
+                Console.WriteLine("Peso ideal\n");
+            else
+                Console.WriteLine("Acima do peso\n");
+        }
+        else
+        {
+            Console.WriteLine("Sexo inválido\n");
+        }
+
+    }
+}
