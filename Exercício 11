@@ -1,0 +1,14 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+      // Exercício 11
+        Console.WriteLine("Exercício 11");
+        Console.Write("Digite a nota P1: ");
+        double notaP1 = double.Parse(Console.ReadLine());
+        double notaNecessaria = (5 * 3 - notaP1) / 2;
+        Console.WriteLine($"Você precisa tirar {notaNecessaria:F2} na P2 para ser aprovado.\n");
+    }
+}
