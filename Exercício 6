@@ -1,0 +1,21 @@
+using System;
+
+class Program
+{
+    static void Main()
+    { 
+     // Exercício 6
+        Console.WriteLine("Exercício 6");
+        Console.Write("Digite o peso: ");
+        double peso6 = double.Parse(Console.ReadLine());
+        Console.Write("Digite a altura: ");
+        double altura6 = double.Parse(Console.ReadLine());
+        double r6 = peso6 / (altura6 * altura6);
+        if (r6 < 20)
+            Console.WriteLine("Abaixo do peso\n");
+        else if (r6 < 25)
+            Console.WriteLine("Peso ideal\n");
+        else
+            Console.WriteLine("Acima do peso\n");
+      }
+}
