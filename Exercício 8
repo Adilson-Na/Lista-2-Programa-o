@@ -1,0 +1,22 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+      // Exercício 8
+        Console.WriteLine("Exercício 8");
+        Console.Write("Digite A: ");
+        int a8 = int.Parse(Console.ReadLine());
+        Console.Write("Digite B: ");
+        int b8 = int.Parse(Console.ReadLine());
+        Console.Write("Digite C: ");
+        int c8 = int.Parse(Console.ReadLine());
+        int h = Math.Max(a8, Math.Max(b8, c8));
+        int somaQuadrados = a8 * a8 + b8 * b8 + c8 * c8 - h * h;
+        if (h * h == somaQuadrados)
+            Console.WriteLine("É um triângulo retângulo\n");
+        else
+            Console.WriteLine("Não é triângulo retângulo\n");
+    }
+}
