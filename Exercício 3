@@ -1,0 +1,18 @@
+using System;
+
+class Program
+{
+    static void Main()
+    { 
+ // Exercício 3
+        Console.WriteLine("Exercício 3");
+        Console.Write("Digite o primeiro número: ");
+        int x3 = int.Parse(Console.ReadLine());
+        Console.Write("Digite o segundo número: ");
+        int y3 = int.Parse(Console.ReadLine());
+        Console.Write("Digite o terceiro número: ");
+        int z3 = int.Parse(Console.ReadLine());
+        int maior3 = Math.Max(x3, Math.Max(y3, z3));
+        Console.WriteLine($"Maior número: {maior3}\n");
+  }
+}
