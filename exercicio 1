@@ -1,0 +1,13 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Exercício 1
+        Console.WriteLine("Exercício 1");
+        Console.Write("Digite o primeiro número: ");
+        int a1 = int.Parse(Console.ReadLine());
+        Console.Write("Digite o segundo número: ");
+        int b1 = int.Parse(Console.ReadLine());
+        Console.WriteLine($"Maior número: {Math.Max(a1, b1)}\n");
