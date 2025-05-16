@@ -1,0 +1,17 @@
+using System;
+
+class Program
+{
+    static void Main()
+    { 
+     // Exercício 5
+        Console.WriteLine("Exercício 5");
+        Console.Write("Digite a base: ");
+        double base5 = double.Parse(Console.ReadLine());
+        Console.Write("Digite a altura: ");
+        double altura5 = double.Parse(Console.ReadLine());
+        double area5 = base5 * altura5;
+        Console.WriteLine($"Área: {area5}");
+        Console.WriteLine(area5 > 100 ? "Terreno grande\n" : "Terreno pequeno\n");
+    }
+}
