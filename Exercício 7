@@ -1,0 +1,29 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+      // Exercício 7
+        Console.WriteLine("Exercício 7");
+        Console.Write("Digite o lado A: ");
+        int a7 = int.Parse(Console.ReadLine());
+        Console.Write("Digite o lado B: ");
+        int b7 = int.Parse(Console.ReadLine());
+        Console.Write("Digite o lado C: ");
+        int c7 = int.Parse(Console.ReadLine());
+        if (a7 + b7 > c7 && a7 + c7 > b7 && b7 + c7 > a7)
+        {
+            if (a7 == b7 && b7 == c7)
+                Console.WriteLine("Triângulo Equilátero\n");
+            else if (a7 == b7 || b7 == c7 || a7 == c7)
+                Console.WriteLine("Triângulo Isósceles\n");
+            else
+                Console.WriteLine("Triângulo Escaleno\n");
+        }
+        else
+        {
+            Console.WriteLine("Não forma triângulo\n");
+        }
+    }
+}
